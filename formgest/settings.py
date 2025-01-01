@@ -33,7 +33,10 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
     "localhost", 
-    '127.0.0.1', 
+    '127.0.0.1',
+    'https://quizformfe-production.up.railway.app/',
+    'quizformfe-production.up.railway.app/',
+    'https://quizformbe-production.up.railway.app/'
  ]
 
 
@@ -84,6 +87,10 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
      "http://localhost:5173",
+    'https://quizformfe-production.up.railway.app/',
+    'quizformfe-production.up.railway.app/',
+    'https://quizformbe-production.up.railway.app/'
+     
 ]
 
 CORS_ALLOW_ALL_ORIGINS = False #Revisar si es correcto
@@ -169,4 +176,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost",
+    'https://quizformfe-production.up.railway.app/',
+    'https://quizformbe-production.up.railway.app/'
 ]
