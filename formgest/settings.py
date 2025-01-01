@@ -87,13 +87,12 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost",
     "http://localhost:5173",
-    'https://quizformfe-production.up.railway.app/',
-    'quizformfe-production.up.railway.app/',
-    'https://quizformbe-production.up.railway.app'
-     
+    "https://quizformfe-production.up.railway.app",
+    "https://quizformbe-production.up.railway.app"
 ]
+
+CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_ALL_ORIGINS = False #Revisar si es correcto
 
