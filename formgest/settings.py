@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     'https://quizformfe-production.up.railway.app',
     'quizformfe-production.up.railway.app',
+    'quizformbe-production.up.railway.app',
     'https://quizformbe-production.up.railway.app',
  ]
 
