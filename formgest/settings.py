@@ -33,11 +33,10 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
     "localhost", 
-    "https://localhost:5173,"
-    '127.0.0.1',
-    'https://quizformfe-production.up.railway.app/',
-    'quizformfe-production.up.railway.app/',
-    'https://quizformbe-production.up.railway.app'
+    "127.0.0.1",
+    'https://quizformfe-production.up.railway.app',
+    'quizformfe-production.up.railway.app',
+    'https://quizformbe-production.up.railway.app',
  ]
 
 
@@ -58,15 +57,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.common.CommonMiddleware', 
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  
 ]
 
 REST_FRAMEWORK = {
@@ -88,8 +86,8 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://quizformfe-production.up.railway.app",
-    "https://quizformbe-production.up.railway.app"
+    "https://quizformfe-production.up.railway.app", 
+    "https://quizformbe-production.up.railway.app",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -125,10 +123,10 @@ WSGI_APPLICATION = 'formgest.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL')
-    )
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
+
+# Asegúrate de que no haya configuraciones duplicadas o incorrectas
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -177,6 +175,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost",
-    'https://quizformfe-production.up.railway.app/',
-    'https://quizformbe-production.up.railway.app'
+    'https://quizformfe-production.up.railway.app',
+    'https://quizformbe-production.up.railway.app',
 ]
