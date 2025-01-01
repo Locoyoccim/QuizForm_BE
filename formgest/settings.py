@@ -92,7 +92,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOW_ALL_ORIGINS = False #Revisar si es correcto
+CORS_ALLOW_ALL_ORIGINS = True #Revisar si es correcto
 
 ROOT_URLCONF = 'formgest.urls'
 
