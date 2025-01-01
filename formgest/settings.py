@@ -33,6 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
     "localhost", 
+    "https://localhost:5173,"
     '127.0.0.1',
     'https://quizformfe-production.up.railway.app/',
     'quizformfe-production.up.railway.app/',
@@ -86,6 +87,7 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
+    "http://localhost",
     "http://localhost:5173",
     'https://quizformfe-production.up.railway.app/',
     'quizformfe-production.up.railway.app/',
