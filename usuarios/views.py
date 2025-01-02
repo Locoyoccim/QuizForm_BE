@@ -57,7 +57,7 @@ def search_forms(request):
     ).distinct().order_by('-similarity')  
 
     response = [{
-        'form_id': form.id, 
+        'id': form.id, 
         'title': form.title,
         'description': form.description,
         'status': form.status,
